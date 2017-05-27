@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Users.css">
+    <script>
+        $(document).ready(function() {
+            $('#userData').submit(function() {
+                var firstName = $('#fn').val(),
+                    lastName = $('#ln').val(),
+                    userDescription = $('#user_description').text();
+                console.log(firstName + lastName + emailAddress + contactNum);
+                $('.tg').append(
+                    `<tr>
+                    <td class = "tg-yw4l">${firstName}</td>
+                    <td class = "tg-yw4l" >${lastName}</td>
+                    < /tr >`
+                );
+                $('#fn').attr('value', "");
+                $('#ln').attr('value', "");
+                $('#ea').attr('value', "");
+                $('#cn').attr('value', "");
+                return false;
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <table class="tg">
+        <tr>
+            <th class="tg-9hbo">First Name</th>
+            <th class="tg-9hbo">Last Name</th>
+            <th class="tg-9hbo">Description</th>
+        </tr>
+
+    </table>
+    <h1>Add User</h1>
+
+    <form id='userData' action='process.php' method='post'>
+        First Name:<input id='fn' type="text" name='first_name'> Last Name:<input id='ln' type="text" name='last_name'>
+        <p>Description: </p><textarea id='user_description'></textarea>
+        <input type="submit" value="Add Contact Card!" form='userData'>
+    </form>
+</body>
+
+</html>
+</form>
+</body>
+
+</html>

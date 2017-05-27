@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja to Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ninjaToCat.css">
+
+    <script>
+        $(document).ready(function() {
+            $('#catPic0').click(function() {
+                $(this).attr('src', 'ninja0.png')
+            })
+            $('#catPic1').click(function() {
+                $(this).attr('src', 'ninja1.png')
+            })
+            $('#catPic2').click(function() {
+                $(this).attr('src', 'ninja2.png')
+            })
+            $('#catPic3').click(function() {
+                $(this).attr('src', 'ninja3.png')
+            })
+            $('#catPic4').click(function() {
+                $(this).attr('src', 'ninja4.png')
+            })
+            $('#backToCat').click(function() {
+                $('#catPic0').attr('src', 'cat0.png');
+                $('#catPic1').attr('src', 'cat1.png');
+                $('#catPic2').attr('src', 'cat2.png');
+                $('#catPic3').attr('src', 'cat3.png');
+                $('#catPic4').attr('src', 'cat4.png');
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <div id="catPictures">
+
+        <img src="cat0.png" alt="This is a piece of a cat" id="catPic0" width=200>
+        <img src="cat1.png" alt="This is a piece of a cat" id="catPic1" width=200>
+        <img src="cat2.png" alt="This is a piece of a cat" id="catPic2" width=200>
+        <img src="cat3.png" alt="This is a piece of a cat" id="catPic3" width=200>
+        <img src="cat4.png" alt="This is a piece of a cat" id="catPic4" width=200>
+
+    </div>
+
+
+    <button id='backToCat'>I Want My Cat BACK NOW!!</button>
+</body>
+
+</html>

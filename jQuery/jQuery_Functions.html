@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var clickTest = $('#click').text();
+            // alert(clickTest);
+            $('#clickToChange').click(function() {
+                $('#click').text("Pledge allegiance to the Targaryens or else!!!");
+            })
+            $('#disappear').click(function() {
+                $('#click').hide();
+            })
+            $('#reappear').click(function() {
+                $('#click').show();
+            })
+            $('#toggle').click(function() {
+                $('#click').toggle();
+            })
+            $('#slideDown').click(function() {
+                $('#click').slideDown();
+            })
+            $('#slideUp').click(function() {
+                $('#click').slideUp();
+            })
+            $('#append').click(function() {
+                $('#click').append(" Congratulations! You have done well :)");
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <p id='click'>Hello! How are you today??</p>
+    <button id='clickToChange'>Change Text</button>
+    <button id='disappear'>Make Text Disappear</button>
+    <button id='reappear'>Make Text Reappear</button>
+    <button id='toggle'>Toggle Text</button>
+    <button id='slideDown'>Move Text Down</button>
+    <button id='slideUp'>Move Text Up</button>
+    <button id='append'>How Did You Do?</button>
+</body>
+
+</html>

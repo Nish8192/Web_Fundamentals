@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+#wrapper {
+    width: 970px;
+    padding: 5px;
+}
+
+#header {
+    display: inline-block;
+    background: linear-gradient(#F7F7F5, #E0E0E0);
+    width: 970px;
+}
+
+#menu_icon {
+    display: inline;
+}
+
+.menu_options {
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    width: 20px;
+}
+
+#search {
+    display: inline;
+    margin-left: 300px;
+}
+
+#search_text {
+    padding-right: 20px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+#search_bar {
+    display: inline;
+    /*margin: 150px;*/
+    padding-left: 20px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    vertical-align: middle;
+}
+
+#go_button {
+    display: inline;
+}
+
+#accordance_img {
+    width: 970px;
+    background-color: #444444;
+}
+
+#accordance_nav {
+    display: block;
+    background-color: #444444;
+}
+
+.nav_options {
+    color: #92B6C4;
+    display: inline-block;
+    background-color: #444444;
+    padding: 20px;
+}
+
+#accordance_tour {
+    display: inline-block;
+    border-style: solid;
+    border-color: #F2F2F2;
+    width: 905px;
+    padding: 30px;
+}
+
+#discover_accordance {
+    display: inline;
+    margin: 30px;
+    font-size: 18pt;
+}
+
+#seperator {
+    display: inline;
+}
+
+#browse_store {
+    display: inline;
+    color: white;
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #42789A;
+    border-radius: 5px;
+}
+
+ul {
+    display: inline;
+}
+
+.section {
+    display: inline-block;
+    width: 239px;
+    background: linear-gradient(#FDFDFD, #F2F2F2);
+}
+
+.section_title {
+    display: inline;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+.section_info {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.section_image {
+    display: block;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.section_button {
+    background-color: #5CA5DC;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+#info {
+    display: inline;
+}
+
+li {
+    display: inline;
+}
+
+.info_link {
+    padding: 5px;
+    display: inline-block;
+    font-size: 12pt;
+    color: blue;
+}
+
+.info_sect {
+    vertical-align: top;
+    display: inline-block;
+    width: 120px;
+    padding-left: 20px;
+}
+
+.info_title {
+    display: inline;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#cont_info {
+    color: red;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.contact_info {
+    display: inline;
+    font-size: 10pt;
+    margin-left: 50px;
+}

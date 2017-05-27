@@ -1,0 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#PokemonPics {
+    width: 500px;
+}
+
+#PokemonInfo {
+    width: 500px;
+}

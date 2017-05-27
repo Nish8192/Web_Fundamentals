@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#catPictures {
+    margin: 10px;
+}
+
+#catPictures img {
+    display: block;
+}
+
+#backToCat {
+    margin: 10px;
+}

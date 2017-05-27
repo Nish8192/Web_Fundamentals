@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's the Weather Like?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Users.css">
+    <script>
+        $(document).ready(function() {
+
+            $('#submitWeather').click(function() {
+                var url = "http://api.openweathermap.org/data/2.5/weather?q="
+                url += $('#userCity').val();
+                url += "&units=imperial";
+                url += "&APPID=9ff48173e8f74a9357a419a15f39a629";
+                $.get(url, function(res) {
+                    $('#cityWeather').append(
+                        `<p>The temperature is
+                        ${res.main.temp}
+                        </p>`
+                    );
+                    console.log(res);
+                })
+
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id='CityInfo' class='row'>
+        <p>Enter Your City:</p>
+        <input type="text" id='userCity'>
+        <button id='submitWeather'>Find the Weather</button>
+    </div>
+
+    <div id='cityWeather' class='col s12'>
+
+    </div>
+</body>
+
+</html>

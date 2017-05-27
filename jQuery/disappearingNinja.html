@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.ninjaPic').click(function() {
+                $(this).hide();
+            })
+            $('#restore').click(function() {
+                $('.ninjaPic').show();
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <img src="ninja.jpg" alt="This is a ninja" class="ninjaPic" width=200>
+    <button id='restore'>Bring My Ninjas Back!</button>
+</body>
+
+</html>

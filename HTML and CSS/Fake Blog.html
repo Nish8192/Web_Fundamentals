@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A short blog all about Nishant!">
+        <title>Nishant's Blog!</title>
+        <link rel="stylesheet" type="text/css" href="Fake Blog.css">
+    </head>
+
+    <body>
+
+        <div style="color:#0A26FB" align="center">
+            <h1><font size="50">Nishant Aggarwal</font></h1>
+            <image src="https://scontent.xx.fbcdn.net/v/t1.0-9/11221597_10155558905140371_9010590135620056696_n.jpg?oh=60f518bc2803821d906234bf9b89f679&oe=5908FD97"
+            alt="A picture of me!" height="200" width="200"></image><br/><br/>
+            <a href="https://www.facebook.com/Nish8192"><font size="5">Add me on Facebook!</font></a>
+        </div><br/>
+
+        <div style="color:#0A26FB">
+            <p><font size="10">A few of my interests:</font></p>
+            <ul>
+                <font size="5">
+                <li>Football</li>
+                <li>Game of Thrones</li>
+                <li>Video Games</li>
+                <li>and of course... CODING!!</li></font>
+            </ul>
+            <p><font size="10">I've lived in a few different places!</font></p>
+
+            <table style="width:40%">
+                <thead>
+                    <tr>
+                        <th><font size="5">YEAR</font></th>
+                        <th><font size="5">PLACE</font></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td><font size="5">1992-1993</font></td>
+                        <td><font size="5">India</font></td>
+                    </tr>
+                    <tr align="center">
+                        <td><font size="5">1993-2000</font></td>
+                        <td><font size="5">New Jersey</font></td>
+                    </tr>
+                    <tr align="center">
+                        <td><font size="5">2000-2017</font></td>
+                        <td><font size="5">Virginia</font></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <p><font size="10">Please take some time and answer a few questions for me</font></p>
+
+        <form action="process.php" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"><br/><br/>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"><br/><br/>
+
+            <label id="email">Email Address:</label>
+            <input type="text" id="email" name="email"><br/><br/>
+
+            <p>Would you like to receive emails about updates from the blog?</p>
+            <input type="radio" id="yes" name="email_opt" value="yes">
+            <label for="yes">YES</label>
+            <input type="radio" id="no" name="email_opt" value="no">
+            <label for="no">NO</label>
+
+            <p>Which of these social media sevices do you use?</p>
+
+            <input type="checkbox" id="facebook" name="social_site" value="facebook">
+            <label for="facebook">Facebook</label>
+
+            <input type="checkbox" id="twitter" name="social_site" value="twitter">
+            <label for="twitter">Twitter</label>
+
+            <input type="checkbox" id="instagram" name="social_site" value="instagram">
+            <label for="instagram">Instagram</label>
+
+            <input type="checkbox" id="snapchat" name="social_site" value="snapchat">
+            <label for="snapchat">Snapchat</label><br/><br/>
+
+            <input type="submit" value="SEND SURVEY ANSWERS">
+        </form>
+
+    </div>
+    </body>
+</html>
